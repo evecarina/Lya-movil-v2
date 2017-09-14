@@ -1,0 +1,64 @@
+/*Inicio*/
+.body{
+	background-image: url(../img/1.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-color: #464646;
+	}
+.inicio .col-xs-12{
+	position: absolute;
+	bottom: 2%;
+}
+.inicio button{
+	margin-right: 10px;
+	margin-left: 20px;
+}
+
+
+/*sign*/
+.sign h2{
+	margin-top: 0px;
+}
+.sign .col-sm-2{
+	margin-top: 10px;
+}
+.sign .row div:nth-child(2){
+	left: 10%;
+}
+.sign p{
+ margin-left: 25%;
+}
+
+.sign2{
+	margin-top: 5%;
+}
+.sign2 button{
+	width: 100%;
+}
+
+/*signup*/
+.signup .col-xs-10 h2{
+	margin-top: 0px;
+	margin-left: 60px;
+}
+.id2-row div{
+margin-bottom: 10px;
+}
+form div:nth-child(1){
+	margin-left: 30px;
+}
+
+.signup form p{
+	display: inline-block;
+}
+.signup2 p:nth-child(2){
+	color: red;
+}
+
+#registrarse{
+	background-color: rgba(255, 0, 0, 0.3);
+	width: 100%;
+
+}

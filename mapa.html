@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Mapa-Localización</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <!--typografia-->
+    <link href="https://fonts.googleapis.com/css?family=Raleway:300,400,500,600" rel="stylesheet">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <!--Link css-->
+    <link rel="stylesheet" type="text/css" href="assets/css/styleMap.css">
+</head>
+<body >
+    <section class="container ubicación">
+
+        <div class="row" id="entrada">
+            <div class="col-xs-12">
+                <div class="form-group origen">
+                    <input type="text" id="origen" name="destino" placeholder="Introduce una ubicación" class="form-control">
+                </div>
+                <div class="form-group">
+                    <input type="text" id="destino" name="destino" placeholder="Introduce una ubicación" class="form-control">
+                </div>
+            </div>
+                <div class="col-xs-12">
+                <!-- boton modal -->
+                <button id="ruta" type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal"><i class="fa fa-bicycle" aria-hidden="true"></i>Open Modal</button>
+
+            </div>
+        </div>
+        <!-- mapa -->
+        <div class="row map">
+            <div class="col-md-12 col-sm-12" id="map">
+                <!-- Aqui ira nuestro mapa -->
+            </div>
+        </div>
+    </section>
+    <!-- modal -->
+    <div id="myModal" class="modal fade" role="dialog">
+        <div class="modal-dialog">
+        <!-- Modal content-->
+        <div class="modal-content">
+              <div class="modal-header">
+                <h4 class="modal-title">Precio Estimado a pagar</h4>
+              </div>
+              <div class="modal-body">
+                <p id="tarifa">Precio</p>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+              </div>
+        </div>
+
+  </div>
+</div>
+
+
+
+
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <!--MAPA-->
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <!-- Tu Archivo main.js -->
+    <script src="https://use.fontawesome.com/1625bb79ec.js"></script>
+    <script type="text/javascript" src="assets/js/mainMap.js"></script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAUrniwaXNypK22pv2ISgsPC-LlbPG4zV0&callback=initMap&libraries=places"></script>
+
+
+</body>
+</html>
